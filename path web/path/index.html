@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETHROOM</title>
+
+    <!-- BOXICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--============== HEADER ==============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <!-- <i class='bx bxs-watch nav__logo-icon'></i> -->
+                <i class='bx bxs-dog'></i>PETHROOM
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">Featured</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">New</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                <div class="nav__shop" id="cart-shop">
+                    <i class='bx bx-shopping-bag'></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--============== CART ==============-->
+    <div class="cart" id="cart">
+        <i class='bx bx-x cart__close' id="cart-close"></i>
+        <h2 class="cart__title-center">My Cart</h2>
+
+        <div class="cart__container">
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img class="cart__img" src="assets/img/간식-초록.png" alt="" >
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">더블 부스터 E/I (눈&면역)</h3>
+                    <span class="cart__price">16,900원</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus'></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus'></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash'></i>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img class="cart__img" src="assets/img/간식-핑크.png" alt="" >
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">더블 부스터 E/I (피부&면역)</h3>
+                    <span class="cart__price">16,900원</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus'></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus'></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash'></i>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img class="cart__img" src="assets/img/간식-노랑.png" alt="" >
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">더블 부스터 E/I (장&면역)</h3>
+                    <span class="cart__price">16,900원</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus'></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus'></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash'></i>
+
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="cart__prices">
+            <span class="cart__prices-item">3 items</span>
+            <span class="cart__prices-total">50,700원</span>
+        </div>
+    </div>
+
+    <!--============== MAIN ==============-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__img-bg">
+                    <img src="assets/img/목욕하는고양이.gif" class="home__img">
+                </div>
+
+                <div class="home__social">
+                    <a href="http://www.facebook.com" target="_blank" class="home__social-link">
+                        Facebook
+                    </a>
+                    <a href="http://twitter.com" target="_blank" class="home__social-link">
+                        Twitter
+                    </a>
+                    <a href="http://www.instagram.com" target="_blank" class="home__social-link">
+                        Instagram
+                    </a>
+                </div>
+
+                <div class="home__data">
+                    <h1 class="home__title">Bathroom</h1>
+                    <p class="home__description">
+                        즐거운 욕실 라이프스타일을 지향합니다.<br>
+                        또한 이 가치가 지속 가능하도록 건강한 반려생활을중시하고 배려하며,
+                        반려 동물 및 반려인들과 진정성 있는 소통을 합니다.
+                    </p>
+
+                    <P>PETHROOM aims to create a happy bathroom lifestyle.<br>
+                        We respect and value healthy companionship between pets and
+                        people and we continuously strive to 
+                        sustainthis value through sincere communication.</P>
+                        <BR>
+                            <BR>
+                                <BR>
+                                    <BR>
+
+                    <!-- <span class="home__price">$1245</span> -->
+
+                    <div class="home__btns">
+                        <a href="#" class="button button--gray button--small">
+                            Discover
+                        </a>
+                        <button class="button home__button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== FEATURED ====================-->
+        <section class="featured section container" id="featured">
+            <h2 class="section__title">Featured</h2>
+            <div class="featured__container grid">
+                <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+                    <img src="assets/img/목욕 샴푸.jpg" class="featured__img" alt="1">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">제로 워터리스 샴푸 </h3>
+                        <span class="featured__price">11,900원</span>
+                    </div>
+                    <button class="button featured__button">ADD TO CART</button>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+                    <img src="assets/img/목욕 샤워해드.jpg" class="featured__img" alt="1">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">릴렉스 샤워기 2.0</h3>
+                        <span class="featured__price">27,900원</span>
+                    </div>
+                    <button class="button featured__button">ADD TO CART</button>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+                    <img src="assets/img/목욕 칫솔.jpg" class="featured__img" alt="1">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">덴탈 틀린 칫솔 XS</h3>
+                        <span class="featured__price">5,900원</span>
+                    </div>
+                    <button class="button featured__button">ADD TO CART</button>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== STORY ====================-->
+        <section class="story section container">
+            <div class="story__container grid">
+                <div class="story__data">
+                    <h2 class="section__title story__section-title">
+                        Our Story
+                    </h2>
+
+                    <h1 class="story__title">
+                        Food Restaurant
+                    </h1>
+
+                    <p class="story__description">
+                        아이들의 건강 관리에 도움이 되는 맛있는고영양 기능 맞춤형 펫푸드
+                <br>
+                <br>
+                Tasty, high in nutrition custom-madepet food to assist keeping your pets healthy
+                    </p>
+
+                    <a href="#" class="button button--small">Discover</a>
+                </div>
+
+                <div class="story__images">
+                    <img src="assets/img/간식먹는 강아지.gif" class="story__img" alt="story">
+                    <div class="story__square"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PRODUCTS ====================-->
+        <section class="products section container" id="products">
+            <h2 class="section__title">PRODUCTS</h2>
+
+            <div class="products__container grid">
+                <article class="products__card">
+                    <img src="assets/img/간식-초록.png" class="products__img" alt="p1">
+                    <h3 class="products__title">더블 부스터  J/I <br> (눈&면역)</h3>
+                    <span class="products__price">16,900원</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="assets/img/간식-핑크.png" class="products__img" alt="p1">
+                    <h3 class="products__title">더블 부스터<BR> E/I (피부&면역)</h3>
+                    <span class="products__price">16,900원</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="assets/img/간식-노랑.png" class="products__img" alt="p1">
+                    <h3 class="products__title">더블 부스터 <BR>S/I (장&면역)</h3>
+                    <span class="products__price">16,900원</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="assets/img/간식 - 보라.png" class="products__img" alt="p1">
+                    <h3 class="products__title">더블 부스터<BR>  I/I (관절&면역)</h3>
+                    <span class="products__price">16,900원</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="assets/img/간식 - 스틱.png" class="products__img" alt="p1">
+                    <h3 class="products__title">스트레스 레머디</h3>
+                    <span class="products__price">20,900원</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== TESTIMONIAL ====================-->
+        <section class="testimonial section container">
+            <div class="testimonial__container grid">
+                <div class="swiper testimonial-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left'></i>
+                            </div>
+                            <p class="testimonial__description">
+                                그냥 바닥에 놓고 쓰는 식기는 너무 맞고,
+                                소화도 안되는지 사료토를 자주 했어요.
+                                페스룸 웰 핏 테이블은 우리 아이한테 딱 맞게 조절할 수 있어서
+                                밥 먹을 때 훨씬 편안해 보여요 ! 
+                            </p>
+                            <h3 class="testimonial__date">March 27. 2021</h3>
+
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/모나.jpg" alt="" class="testimonial__perfil-img">
+
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">모나/4살</span>
+                                    <span class="testimonial__perfil-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left'></i>
+                            </div>
+                            <p class="testimonial__description">
+                                테인리스 식기 사용했었는데,
+                                소리도 시끄럽고 자기 얼굴이 비치니까 무서워 하더라고요 
+                                페스룸 웰 핏 보울은 도자기라 조용하고 
+                                아이도 무서워하지 않아 좋아요 
+                            </p>
+                            <h3 class="testimonial__date">March 27. 2021</h3>
+
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/탕이.jpg" alt="" class="testimonial__perfil-img">
+
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">탕이/2살</span>
+                                    <span class="testimonial__perfil-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left'></i>
+                            </div>
+                            <p class="testimonial__description">
+                                밥을 항상 격하게 먹어서 밥그릇이 제자리에 있는 걸 못 봤는데,
+                                페스룸 웰 핏 테이블로 바꿔주니 미끄럼 방지가 잘 되어서
+                                식사가 끝나도 그릇이 제자리에 있네요.
+                                디자인도 예뻐서 집에 잘 어울려요!
+                            </p>
+                            <h3 class="testimonial__date">March 27. 2021</h3>
+
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/보노.jpg" alt="" class="testimonial__perfil-img">
+
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">보노 / 2살 </span>
+                                    <span class="testimonial__perfil-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-left-arrow-alt'></i>
+                    </div>
+                </div>
+
+                <div class="testimonial__images">
+                    <div class="testimonial__square"></div>
+                    <img src="assets/img/긴머리 강아지.gif" alt="" class="testimonial__img">
+                </div>
+            </div>
+        </section>
+
+        <!--==================== NEW ====================-->
+        <section class="new section container" id="new">
+            <h2 class="section__title">New Arrivals</h2>
+            <div class="new__container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+                            <img src="assets/img/리빙 (1).jpg" alt="" class="new__img">
+
+                            <div class="new__data">
+                                <h3 class="new__title">슬라이딩 펫 스푼</h3>
+                                <span class="new__price">16,900원</span>
+
+                                <button class="button new__button">ADD TO CART</button>
+                            </div>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+                            <img src="assets/img/흰밥그릇.jpg" alt="" class="new__img">
+
+                            <div class="new__data">
+                                <h3 class="new__title">웰 핏 보울</h3>
+                                <span class="new__price">24,900원</span>
+
+                                <button class="button new__button">ADD TO CART</button>
+                            </div>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+                            <img src="assets/img/빨노 밥그릇.jpg" alt="" class="new__img">
+
+                            <div class="new__data">
+                                <h3 class="new__title">웰 핏 테이블 & 보울</h3>
+                                <span class="new__price">48,900원</span>
+
+                                <button class="button new__button">ADD TO CART</button>
+                            </div>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+                            <img src="assets/img/리빙 (2).jpg" alt="" class="new__img">
+
+                            <div class="new__data">
+                                <h3 class="new__title">슬로우 피더</h3>
+                                <span class="new__price">14,500원</span>
+
+                                <button class="button new__button">ADD TO CART</button>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+         <!--==================== NEWSLETTER ====================-->
+         <section class="newsletter section container">
+            <div class="newsletter__bg grid">
+                <div>
+                    <h2 class="newsletter__title">Don't hesitate to ask!</h2>
+                    <p class="newsletter__description">
+                        
+                        궁금한 점이 있으시다면 문의를 남겨주세요.<br>
+                        문의 내역 및 답변은 마이페이지에서 확인하실 수 있습니다!
+                    </p>
+                </div>
+
+                <form action="" class="newsletter__subscribe">
+                    <input type="email" placeholder="검색" class="newsletter__input">
+                    <button class="button">
+                        1:1 문의하기
+                    </button>
+                </form>
+            </div>
+         </section>
+
+    </main>
+
+    <!--============== FOOTER ==============-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">PETHROOM</h3>
+
+                <ul class="footer__list">
+                    <li>비엠스마일(BMSMILE Co., Ltd.)</li>
+                    <li>주소 : 서울특별시 강남구 테헤란로44길 8, 4층</li>
+                    <li>사업자등록번호 : 394-81-01000 [사업자정보확인]</li>
+                    <li>통신판매업 신고번호 : 2020-서울강남-01687</li>
+                    <li>대표 : 박봉수ㅣ개인정보보호책임자 : 이동욱</li>
+                    <li>고객센터 번호 : 1644-9603ㅣ이메일 : contact@bmsmile.com</li>
+                    <li>호스팅서비스제공자 : 카페24</li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">POLICY</h3>
+
+                <ul class="footer__link">
+                    <li> <a href="#" class="footer__link">이용약관</a></li>
+                    <li>
+                        <a href="#" class="footer__link">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">이용안내</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">반품, 환불규정</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">제휴입점문의</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">C/S CENTER</h3>
+
+                <ul class="footer__link">
+                    <li>
+                        <a href="#" class="footer__link">MON-FRIㅣ09:30 - 17:00</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">LUNCH ㅣ 12:30 - 13:30</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">SAT, SUN, HOLIDAY OFF</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">카카오톡 플러스친구 @페스룸</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">SNS SERVICE</h3>
+
+                <ul class="footer__social">
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-twitter' ></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-instagram' ></i>
+                        </a>
+                    </li>
+                 
+                    
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">&#169; 2023 Youngkim. All rights reserved</span>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+    </a>
+
+
+    <!-- SWIPER JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

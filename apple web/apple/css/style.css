@@ -1,0 +1,779 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --main-color:#f33232;
+    --black:#909090;
+    --ft:#5d5c5c;
+    --bg:#ffffff;
+    --border:.1rem solid rgba(199,199,199,0.3);
+}
+
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    outline:none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+}
+
+header {
+    color: #565454;
+    background: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    z-index: 1000;
+}
+
+/* 애플블랙 로고 */
+
+.header .logo img{
+    height: 10rem;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    color: var(--ft);
+    font-size: 2rem;
+}
+
+.header .navbar a:hover{
+    color: var(--main-color);
+    border-bottom: .2rem dotted var(--black);
+}
+
+.header .icons div{
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.header .icons div:hover{
+    color: var(--main-color);
+}
+
+#menu-btn{
+    display: none;
+}
+
+.header .search-form{
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background-color: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+}
+
+.header .search-form.active{
+    transform: scaleY(1);
+}
+
+.header .search-form input{
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.header .search-form label{
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: #3b3b3b;
+    margin-right: 1.5rem;
+}
+
+.header .search-form label:hover{
+    color: var(--main-color);
+}
+
+/* home start */
+section{
+    padding: 2rem 7%;
+}
+
+
+
+/* 타이틀 사진  */
+.home{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/아이폰\ 15프로.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    max-width: 70rem;
+    
+}
+
+
+/* 아이폰15프로 큰글자 */
+.home .content h3{
+    font-size: 8rem;
+    color: white;
+}
+
+
+/* 티타늄,초강력.초경량. 초프로 */
+.home .content p{
+    color: white;
+    font-size: 2.5rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+
+/* 더알아보기>  구입하기> */
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: skyblue;
+    background:none;
+    border-radius:50px;
+    cursor: pointer;
+
+}
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+
+
+/* 신제품 슬라이드 */
+.heading{
+    text-align: center;
+    color: var(--ft);
+    text-transform: uppercase;
+    padding: 6.5rem 0;
+    font-size: 4rem;
+}
+
+.heading span{
+    color: var(--main-color);
+}
+
+.world .row{
+    display: flex;
+    align-items: center;
+    background: var(--bg);
+    flex-wrap: wrap;
+}
+
+.world .image{
+    flex: 1 1 45rem ;
+    display: flex;
+}
+
+/* 아이폰15PRO 슬라이드 이미지 사이즈 */
+.world .image img{
+    width:30%;
+    
+}
+
+.world .row .content{
+    flex: 1 1 45rem;
+    padding: 7rem 4rem;
+}
+
+.world .row .content h3{
+    font-size: 5rem;
+    color: var(--ft);
+    padding-bottom: 2rem;
+}
+
+/* 슬라이드안 긴제품 설명 */
+
+.world .row .content p{
+    font-size: 2rem;
+    color: #636363;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+
+
+
+
+
+/* koreajj start */
+.koreajj .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.koreajj .box-container .box{
+    padding: 2rem;
+    text-align: center;
+    color: var(--border);
+    /* background: var(--black); */
+}
+
+/* 에어팟,멕세이프,틀크기조정 */
+
+.koreajj .box-container .box img{
+    width: 100%;
+    height: 35rem;
+    border-radius: 10%;
+}
+
+
+.koreajj .box-container .box h3{
+    color: var(--ft);
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+.koreajj .box-container .box p{
+    color: #8c8a8a;
+    font-size:1.5rem ;
+    padding-bottom: 1rem;
+}
+.koreajj .box-container .box .price span{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #ff7f50;
+}
+
+/* 에어팟 배경 라운드주기 */
+.koreajj .box-container .box:hover{
+    background-color:#ebebeb;
+    color: #fff;
+    border-radius: 10%;
+}
+
+/* themes start */
+.themes .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+
+/* 맥북미로-이미지 라운드주기 */
+.themes .box-container .box{
+    padding: 2rem;
+    text-align: center;
+    border: var(--border);
+    background: #edebeb;
+    border-radius: 10%;
+    
+}
+
+/* 박스 빨갛게 변하는곳 */
+
+.themes .box-container .box:hover{
+    border: var(--gray) solid 3px;
+}
+.themes .box-container .box .image{
+    padding: 2rem 0;
+}
+
+/* 맥북 미로 배경박스 모양,크기 */
+.themes .box-container .box img{
+    height: 40rem;
+    width: 100%;
+    border-radius: 10%;
+}
+
+/* 하트아이콘  */
+.themes .box-container .box .icons a{
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+    border: rgb(155, 155, 155) solid 1px;
+    border-radius: 50%;
+    color:rgb(136, 136, 136);
+    line-height: 5rem;
+    margin: 0.5rem;
+}
+
+/* 하트아이콘 누르면 핑크 */
+.themes .box-container .box .icons a:hover{
+    border: coral solid 1px;
+    color:coral;
+}
+
+
+/* 맥북프로 이름 */
+.themes .box-container .box .content h3{
+    color:rgb(49, 49, 49);
+    font-size:2.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* 맥북프로 가격  */
+.themes .box-container .box .content h4{
+    color: var(--ft);
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding-bottom: 0.5rem;
+}
+
+
+
+/* 초록색 케이스 */
+/* premium start */
+.premium .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    
+    
+}
+.premium .box-container .box{
+    text-align: center;
+    border: var(--border);
+    padding-bottom: 2rem;
+    
+}
+.premium .box-container .box .image{
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+    border-radius: 10%;  
+    /* 이미지 라운드 */
+}
+
+/* 간단한 선택 크나큰 - 위스삭제하였음*/
+.premium .box-container .box .image img{
+    
+    height: 100%;
+    object-fit: cover;
+    
+}
+.premium .box-container .box:hover .image img{
+    transform: scale(1.2);
+}
+.premium .box-container .box p{
+    color: var(--ft);
+    font-size: 2rem;
+    line-height: 1.5;
+    padding: 2rem 0;
+    
+}
+
+/* 초록케이스 제품명 굵은글자 */
+.premium .box-container .box h3{
+    color: rgb(36, 36, 36);
+    font-size: 2.5rem;
+}
+
+/* NEW 글자 */
+.premium .box-container .box h2{
+    color: #f33232;
+    margin-top: 50px;
+}
+
+
+
+
+
+/* area start */
+.area .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    
+}
+.area .box-container .box{
+    border: var(--border);
+    /* background: #666666; */
+}
+.area .box-container .box .content{
+    padding: 2rem;
+}
+.area .box-container .box .content-box .title{
+    font-size: 2.5rem;
+    color:var(--ft);
+    line-height: 1.5;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* 핸드폰 쭈르륵부터 */
+.area .box-container .content .conbox1 img{
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+.area .box-container .content .conbox1 p{
+    color: var(--ft);
+    font-size: 1.6rem;
+    line-height: 1.8;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+/* 시계쭈르륵부터 */
+.area .box-container .content .conbox2 img{
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+.area .box-container .content .conbox2 p{
+    color: var(--ft);
+    font-size: 1.6rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+
+
+
+
+/* airhotel */
+
+.airhotel .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.airhotel .box-container .wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.airhotel .box-container .wrapper .img{
+    width: 100%;
+    height: 40rem;
+    position: relative;
+}
+.airhotel .box-container .wrapper .img img{
+    width: 100%;
+    height: 100%;
+}
+.airhotel .box-container .wrapper .img .text{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;left: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    opacity: 0;
+    transition: 0.6s;
+}
+.airhotel .box-container .wrapper .img .text:hover{
+    opacity: 1;
+}
+.airhotel .box-container .wrapper .img .text h1{
+    font-size: 2.5rem;
+    color:#00ff84;;
+    margin-bottom: .8rem;
+}
+.airhotel .box-container .wrapper .img .text p{
+    font-size: 1.8rem;
+    color: #fff;
+}
+.airhotel .box-container .wrapper .img .text > * {
+    transform: translateY(25px);
+    transition: transform 0.6s;
+}
+.airhotel .box-container .wrapper .img .text:hover > *{
+    transform: translateY(0px);
+}
+
+/* event starts */
+.event .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+.event .container .box{
+    background: rgb(255,255,255);
+    height: 340px;
+    width: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.8s;
+  
+}
+.event .container .box1{
+    background: linear-gradient(to bottom, 
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0) 50%,
+    rgba(0,0,0,0.3) 80%,
+    #000 100%),
+    url(../images/음악.jpg) center center no-repeat;
+    background-size: cover;
+
+}
+.event .container .box1:hover{
+    transform: translateY(20px);
+    transition: all 0.5s;
+    opacity: 0.6;
+}
+.event .container .box2{
+    background: linear-gradient(to bottom, 
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0) 50%,
+    rgba(0,0,0,0.3) 80%,
+    #000 100%),
+    url(../images/맥북\ 블루+퍼플.jpg) center center no-repeat;
+    background-size: cover;
+
+}
+.event .container .box2:hover{
+    transform: translateY(20px);
+    transition: all 0.5s;
+    opacity: 0.6;
+}
+.event .container .box3{
+    background: linear-gradient(to bottom, 
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0) 50%,
+    rgba(0,0,0,0.3) 80%,
+    #000 100%),
+    url(../images/이모지.png) center center no-repeat;
+    background-size: cover;
+
+}
+.event .container .box3:hover{
+    transform: translateY(20px);
+    transition: all 0.5s;
+    opacity: 0.6;
+}
+.event .container .box4{
+    background: linear-gradient(to bottom, 
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0) 50%,
+    rgba(0,0,0,0.3) 80%,
+    #000 100%),
+    url(../images/어플모양.jpg) center center no-repeat;
+    background-size: cover;
+
+}
+.event .container .box4:hover{
+    transform: translateY(20px);
+    transition: all 0.5s;
+    opacity: 0.6;
+}
+
+.event .container .in{
+    position: absolute;
+    bottom: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.event .container .in h4{
+    font-size: 2rem;
+}
+
+.event .container .in p{
+    font-size: 1.5rem;
+}
+
+
+/* footer starts */
+.footer{
+    background: var(--bg);
+    text-align: center;
+}
+.footer .share{
+    padding: 1rem 0;
+}
+.footer .share a{
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: var(--main-color);
+    border: var(--border);
+    border-radius: 50%;
+    margin: .3rem;
+
+}
+.footer .share a:hover{
+    background: var(--main-color);
+    color: #fff;
+}
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+.footer .links a{
+    color: var(--ft);
+    border: var(--border);
+    font-size: 1.3rem;
+    padding: .7rem 1rem;
+}
+.footer .links a:hover{
+    background: var(--main-color);
+    color: #fff;
+}
+.footer .fin p{
+ font-size: 1.5rem;
+}
+
+.footer .credit{
+    font-size: 1.5rem;
+    color: var(--ft);
+    padding: 1.5rem;
+    font-weight: lighter;
+}
+.footer .credit span{
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+/* mdeia queries / break point */
+
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding:1.5rem 2rem;
+    }
+    .world .image{
+        display: flex;
+        flex-direction: column;
+    }
+    .world .image img{
+        width: 100%;
+        height: 40rem;
+    }
+}
+
+
+@media (max-width:768px) {
+    #menu-btn{
+        display: inline-block;
+    }
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: var(--bg);
+        width: 16rem;
+        height: calc(100vh - 9.5rem);
+    }
+    .header .navbar a{
+        color: var(--ft);
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .header .navbar a:hover{
+        color: var(--main-color);
+        border: none;
+    }
+    
+    .header .navbar.active{
+        right: 0;
+    }
+
+    swiper-container{
+      
+        height: 70rem;
+        background:#edebeb;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        position: absolute;
+        top: var(--swiper-navigation-top-offset,25%);
+        color: #fff;
+    }
+
+    section{
+        padding: 0;
+    }
+    .world .image{
+        width: 100%;
+        height:40rem;
+    }
+
+    .world .row .content{
+        padding-left: 3rem;
+        padding-top: 2rem;
+    }
+
+    .world .row .content h3{
+        font-size: 2.5rem;
+        color: var(--ft);
+        padding-bottom: 1.5rem;
+    }  
+    .world .row .content p{
+        font-size: 1.5rem;
+        color: #272727;
+        line-height: 1.5;
+    }  
+    .world .row .btn{
+        /* display: none; */
+        
+    }
+}
+
+
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+    .home .content h3{
+    font-size: 6rem;
+    }
+
+    .world .row .content{
+        
+    }
+
+    .world .image img{
+        width: 100%;
+        
+    }
+    
+    swiper-container{
+        height: 60rem;
+        background:#edebeb;
+    }
+}
+
